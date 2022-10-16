@@ -1,0 +1,180 @@
+/*--------------css reset----------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.Banner {
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+.logo{
+	width: 20%;
+}
+.n-link {
+	width: 48%;
+}
+.n-link ul {
+    list-style: none;
+    display: block;
+	margin: 0px;
+}
+.n-link ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+.n-link ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.n-link ul li a:hover {
+	color: #0072e1;
+}
+.s-box {
+    width: 150px;
+}
+.searchInput {
+    width: 111px;
+}
+.banner-txt-box{
+	margin-top: 150px;
+	/* margin-bottom: 100px */
+}
+
+/*-----------------Product----------*/
+.product-box{
+	margin-top: 200px;
+}
+.product-img-box {
+    box-shadow: 1px 1px 5px 0px grey;
+    border-radius: 3px;
+    margin: 20px;
+    padding: 0;
+}
+.product-img-box img{
+	width: 100%;
+}
+/*-----------------Product end----------*/
+
+/*------------company images -------*/
+.company-img{
+	width: 100%;
+}
+.compant-box{
+	margin-top: 80px;
+}
+/*------------company images end-------*/
+.big-container{
+	background-color: #d9e6ca;
+}
+.comapny-img-box{
+	border-radius: 3px;
+	margin-left: 48px;
+	margin-right: 47px;
+	margin-top: 10px;
+	margin-bottom: 72px;
+	padding: 0;
+	background-color: white;
+	box-shadow: 1px 1px 5px 0px grey;
+
+}
+.comapny-img-box img{
+	width: 100%;
+}
+.company-text{
+	margin: 30px
+}
+.company-text p{
+	font-size: 1.2rem
+}
+.browse{
+	margin-top: 50px;
+}
+.browse-by{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.browse-by {
+	width: 100%;
+	margin-bottom: 35px;
+}
+.Europic{
+	margin-left: 33px;
+	margin-top: 10px;
+}
+
+
+/*-------------Footer section----------------*/
+
+.footer{
+	background-color: #3a3e48;
+}
+.footer-logo img{
+	width: 100%;
+	padding-right: 50px;
+}
+
+.footer-box-txt{
+	padding-top: 47px;
+	line-height: 45px;
+	margin-top: 31px;
+}
+.footer-copyright{
+	background-color: black;
+}
+.footer-copyright p{
+	font-size: 22px;
+	padding: 12px;
+	margin: 0;
+}
+
+.search{
+	position: relative;
+}
+.searchInput input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+    height: 38px;
+    color: white;
+    outline: none;
+}
+.searchInput input::placeholder{
+	color: #fff;
+}
+.searchButton{
+	position: absolute;
+	top: 0;
+	right: -2px;
+	height: 38px;
+}
+input[type="text"] {
+    outline: none;
+    padding-left: 5px;
+}
+
+
+/* Addign media query  */
+
+/* @media screen and (max-width: 600px) {
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+	  float: right;
+	  display: block;
+	}
+  } */
