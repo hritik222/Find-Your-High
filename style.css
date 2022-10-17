@@ -2,6 +2,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 .Banner {
     background-position: center;
@@ -17,12 +18,17 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
+    padding-top: 20px;
+    position: relative;
 }
 .logo{
 	width: 20%;
 }
 .n-link {
-	width: 48%;
+    width: 70%;
+    display: inherit;
+	transition: 0.5s;
+	overflow: hidden;
 }
 .n-link ul {
     list-style: none;
@@ -32,20 +38,24 @@
 .n-link ul li {
     display: inline-block;
     padding: 0px 10px;
+	font-size: 1em;
 }
 .n-link ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
     font-weight: 500;
-	cursor: pointer;
-	transition: 0.5s;
+    cursor: pointer;
+    transition: 0.5s;
 }
 .n-link ul li a:hover {
 	color: #0072e1;
 }
+.active.active {
+	color: #0072e1;
+}
 .s-box {
     width: 150px;
+    margin-left: auto;
 }
 .searchInput {
     width: 111px;
@@ -53,6 +63,12 @@
 .banner-txt-box{
 	margin-top: 150px;
 	/* margin-bottom: 100px */
+}
+.icon {
+	display: none;
+}
+.icon i.fa.fa-bars {
+    font-size: 20px;
 }
 
 /*-----------------Product----------*/
@@ -123,6 +139,9 @@
 .footer{
 	background-color: #3a3e48;
 }
+.search-box-footer {
+    margin-bottom: 10px;
+}
 .footer-logo img{
 	width: 100%;
 	padding-right: 50px;
@@ -166,15 +185,5 @@
 input[type="text"] {
     outline: none;
     padding-left: 5px;
+    font-size: 0.8em;
 }
-
-
-/* Addign media query  */
-
-/* @media screen and (max-width: 600px) {
-	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon {
-	  float: right;
-	  display: block;
-	}
-  } */

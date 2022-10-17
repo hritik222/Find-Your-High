@@ -12,41 +12,64 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
 
 		<section class="Banner" style="background-image: url(./images/bg.webp)">
-			<div class="container">
+			<div class="container ">
 				<div class="navigation">
 					<div class="logo">
 						<img src="images/logo.png" width="100%" />
 					</div>
-					<div class="n-link">
+					<div class="n-link" id="toggleslide">
 						<ul>
-							<li><a href="#">HOME</a></li>
+							<li><a href="#" class="active">HOME</a></li>
 							<li><a href="#">PRODUCTS</a></li>
 							<li><a href="#">STORES</a></li>
 							<li><a href="#">SHOP</a></li>
 							<li><a href="#">STRAINS</a></li>
 							<li><a href="#">CONTACT US</a></li>
 						</ul>
-					</div>
-					<!-- search BOx add here -->
-					<div class="s-box">
-						<div class="search">
-							<div class="searchInput">
-								<input type="text" name="Search" placeholder="Search...">
-							</div>
-							<div class="searchButton">
-								<button type="button" class="btn btn-light"><i class="fa fa-search"></i></button>
+						<!-- search BOx add here -->
+						<div class="s-box">
+							<div class="search">
+								<div class="searchInput">
+									<input type="text" name="Search" placeholder="Search...">
+								</div>
+								<div class="searchButton">
+									<button type="button" class="btn btn-light"><i class="fa fa-search"></i></button>
+								</div>
 							</div>
 						</div>
+						<!-- menu icon add here -->
+					</div>
+					<div class="icon" onclick="toggle()">
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars"></i>
+						</a>
 					</div>
 				</div>
+				<!-- Adding javascript for navigation -->
+				<script>
+					function toggle() {
+						var tog = document.getElementById("toggleslide");
+						if (tog.style.height === "0px") {
+							tog.style.height = "240px";
+						} else {
+							tog.style.height = "0px";
+						}
+
+						// function toggle() {
+						// 	document.getElementById('toggleslide').style.height = "240px"
+						// }
+					}
+				</script>
 				<!--------banner text------------>
 				<div class="row banner-txt-box">
-					<div class="col-md">
+					<div class="col-md-s-sm">
 						<h1 class="display-4 text-light">Find &nbsp; Your &nbsp; High</h1>
 						<p class="text-light">In literary theory, a text is any object that can be "read",
 							<br>whether this object is a work of literature, a street sign,<br> an arrangement of
@@ -227,7 +250,7 @@
 								pines<br>Pre-rolls<br>Edibis<br>Sublings<br>Topicals</p>
 						</div>
 						<div class="col-md-5 footer-box-txt">
-							<h1 class=" text-left text-light font-weight-bold"> Sign Up For Newsletter</h1>
+							<h1 class=" text-left text-light font-weight-bold display-4"> Sign Up For Newsletter</h1>
 							<p class="text-left  font-weight-bolder text-light">In literary theory, a text is any object
 								that can</p>
 							<div class="search-box-footer">
